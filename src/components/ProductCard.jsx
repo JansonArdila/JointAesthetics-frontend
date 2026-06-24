@@ -53,7 +53,7 @@ const ProductCard = ({ product, onEdit, onDelete, onImageDelete, onSetMain }) =>
                                 >
                                     <div className="w-full h-full rounded border border-gray-300 bg-gray-100 overflow-hidden">
                                         <img
-                                            src={getImageUrl(mainImage.imagen_nombre)}
+                                            src={mainImage.imagen_nombre}
                                             alt={product.nombre}
                                             className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                                         />
@@ -94,7 +94,7 @@ const ProductCard = ({ product, onEdit, onDelete, onImageDelete, onSetMain }) =>
                                         className="flex-shrink-0 w-16 h-16 rounded border border-gray-300 overflow-hidden"
                                     >
                                         <img
-                                            src={getImageUrl(image.imagen_nombre)}
+                                            src={image.imagen_nombre}
                                             alt={`Miniatura ${index + 1}`}
                                             className="w-full h-full object-cover"
                                         />
