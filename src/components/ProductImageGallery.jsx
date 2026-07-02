@@ -20,7 +20,7 @@ const ProductImageGallery = ({ images, productId, onImageDelete, onSetMain, onRe
     }
 
     const currentImage = images[currentIndex];
-    const imageUrl = getImageUrl(currentImage.imagen_nombre);
+    const imageUrl = currentImage.imagen_url;
 
     const handlePrev = () => {
         setCurrentIndex((prevIndex) =>
@@ -152,7 +152,7 @@ const ProductImageGallery = ({ images, productId, onImageDelete, onSetMain, onRe
                                     }`}
                             >
                                 <img
-                                    src={image.url}
+                                    src={image.imagen_url}
                                     alt={`Miniatura ${index + 1}`}
                                     className="w-full h-full object-cover"
                                 />

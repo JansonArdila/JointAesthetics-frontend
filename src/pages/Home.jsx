@@ -161,7 +161,7 @@ const Home = () => {
                                             {product.imagenes?.slice(0, 3).map((img, index) => (
                                                 <img
                                                     key={img.id}
-                                                    src={getImageUrl(img.imagen_nombre)}
+                                                    src={img.imagen_url}
                                                     className="w-16 h-16 object-cover rounded border cursor-pointer"
                                                     alt="miniatura"
                                                 />
@@ -171,7 +171,7 @@ const Home = () => {
                                         {/* Imagen principal */}
                                         <div className="flex-shrink-0 ml-16 h-48 flex items-center">
                                             <img
-                                                src={getImageUrl(mainImage?.imagen_nombre)}
+                                                src={mainImage?.imagen_url}
                                                 className="h-48 object-cover rounded"
                                                 alt={product.nombre}
                                             />

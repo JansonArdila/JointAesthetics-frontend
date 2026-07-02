@@ -19,7 +19,7 @@ const ImageModal = ({ images, selectedIndex, onClose, onSelectImage }) => {
 
                 {/* Imagen grande */}
                 <img
-                    src={getImageUrl(images[selectedIndex].imagen_nombre)}
+                    src={images[selectedIndex].imagen_url}
                     alt="Vista ampliada"
                     className="w-full max-h-[70vh] object-contain rounded-lg"
                 />
@@ -30,7 +30,7 @@ const ImageModal = ({ images, selectedIndex, onClose, onSelectImage }) => {
                     {images.map((img, index) => (
                         <img
                             key={img.id}
-                            src={getImageUrl(img.imagen_nombre)}
+                            src={img.imagen_url}
                             onClick={() => onSelectImage(index)}
                             className={`w-20 h-20 rounded cursor-pointer border ${index === selectedIndex
                                 ? "border-blue-500"

@@ -121,7 +121,7 @@ const Orders = () => {
                                                     {mainImage && (
                                                         <div className="w-16 h-16 flex-shrink-0">
                                                             <img
-                                                                src={getImageUrl(mainImage.imagen_nombre)}
+                                                                src={mainImage.imagen_url}
                                                                 alt={item.producto?.nombre}
                                                                 className="w-full h-full object-cover rounded"
                                                             />

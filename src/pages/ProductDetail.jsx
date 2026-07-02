@@ -136,7 +136,7 @@ const ProductDetail = () => {
                         <div className="bg-white border border-gray-200 rounded-lg p-4 flex justify-center items-center">
                             {product.imagenes?.length > 0 ? (
                                 <img
-                                    src={product.imagenes[selectedImageIndex].imagen_nombre}
+                                    src={product.imagenes[selectedImageIndex].imagen_url}
                                     alt={product.nombre}
                                     className="flex-shrink-0 w-96 h-96 object-cover rounded-lg"
                                     onClick={() => setShowModal(true)}
@@ -169,7 +169,7 @@ const ProductDetail = () => {
                                             }`}
                                     >
                                         <img
-                                            src={image.imagen_nombre}
+                                            src={image.imagen_url}
                                             alt={`Imagen ${index + 1}`}
                                             className="w-full h-full object-cover"
                                         />
